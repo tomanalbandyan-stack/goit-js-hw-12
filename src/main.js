@@ -86,6 +86,9 @@ form.addEventListener('submit', e => {
 });
 
 loadMoreBtn.addEventListener('click', () => {
+  showLoader();
+  hideLoadMoreBtn();
+
   page += 1;
   fetchImages();
 });
